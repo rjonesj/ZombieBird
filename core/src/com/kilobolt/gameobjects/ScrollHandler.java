@@ -19,8 +19,8 @@ public class ScrollHandler {
     // the size of the gap between each pair of pipes.
 
     // Capital letters are used by convention when naming constants.
-    public static final int SCROLL_SPEED = -100; //-59
-    public static final int PIPE_GAP = 90;      //49
+    public static final int SCROLL_SPEED = -100; //-59, -100
+    public static final int PIPE_GAP = 90;      //49, 90
 
     // Constructor receives a float that tells us where we need to create our
     // Grass and Pipe objects.

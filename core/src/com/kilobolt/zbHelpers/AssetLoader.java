@@ -23,7 +23,7 @@ public class AssetLoader {
 
     public static Animation birdAnimation;
 
-    public static Sound dead, flap, coin;
+    public static Sound dead, flap, coin, bgSound;
 
     public static Music bgMusic;
 
@@ -76,9 +76,9 @@ public class AssetLoader {
         bar = new TextureRegion(texture, 136, 16, 22, 3);
         bar.flip(false, true);
 
-        dead = Gdx.audio.newSound(Gdx.files.internal("data/dead.wav"));
-        flap = Gdx.audio.newSound(Gdx.files.internal("data/flap.wav"));
-        coin = Gdx.audio.newSound(Gdx.files.internal("data/coin.wav"));
+        dead = Gdx.audio.newSound(Gdx.files.internal("data/dead48.wav"));
+        flap = Gdx.audio.newSound(Gdx.files.internal("data/flap48.wav"));
+        coin = Gdx.audio.newSound(Gdx.files.internal("data/coin48.wav"));
 
         font = new BitmapFont(Gdx.files.internal("data/text.fnt"));
         font.getData().setScale(.25f, -.25f);
@@ -118,6 +118,10 @@ public class AssetLoader {
         dead.dispose();
         flap.dispose();
         coin.dispose();
+//        bgSound.dispose();
+
+        //Dispose music
+        bgMusic.dispose();
 
         //dispose bitmapfonts
         font.dispose();

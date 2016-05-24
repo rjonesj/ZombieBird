@@ -298,7 +298,7 @@ public class GameRenderer {
         }
 
         batcher.end();
-        drawTransition(delta);
+//        drawTransition(delta);
     }
 
     private void drawTransition(float delta) {

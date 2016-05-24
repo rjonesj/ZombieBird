@@ -6,6 +6,7 @@ import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.kilobolt.gameworld.GameRenderer;
 import com.kilobolt.gameworld.GameWorld;
+import com.kilobolt.zbHelpers.AssetLoader;
 import com.kilobolt.zbHelpers.InputHandler;
 
 /**
@@ -18,6 +19,7 @@ public class GameScreen implements Screen {
     private float runTime = 0;
 
     public GameScreen() {
+
         float screenWidth = Gdx.graphics.getWidth();
         float screenHeight = Gdx.graphics.getHeight();
         float gameWidth = 136;
