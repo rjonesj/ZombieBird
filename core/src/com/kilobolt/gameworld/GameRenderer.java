@@ -1,7 +1,6 @@
 package com.kilobolt.gameworld;
 
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.Animation;
@@ -19,12 +18,11 @@ import com.kilobolt.ui.SimpleButton;
 import com.kilobolt.zbHelpers.AssetLoader;
 import com.kilobolt.zbHelpers.InputHandler;
 
+import java.util.List;
+
 import aurelienribon.tweenengine.Tween;
 import aurelienribon.tweenengine.TweenEquations;
 import aurelienribon.tweenengine.TweenManager;
-
-import java.util.List;
-import java.util.Random;
 
 /**
  * Created by Ricky on 4/25/2016.
@@ -46,7 +44,7 @@ public class GameRenderer {
 
     // Game Assets
     private TextureRegion bg, grass;
-    private Animation birdAnimation;
+    private Animation<TextureRegion> birdAnimation;
     private TextureRegion birdMid, birdDown, birdUp;
     private TextureRegion skullUp, skullDown, bar;
 
