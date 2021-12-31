@@ -186,14 +186,8 @@ public class InputHandler implements InputProcessor {
         return false;
     }
 
-    /**
-     * Called when the mouse wheel was scrolled. Will not be called on iOS.
-     *
-     * @param amount the scroll amount, -1 or 1 depending on the direction the wheel was scrolled.
-     * @return whether the input was processed.
-     */
     @Override
-    public boolean scrolled(int amount) {
+    public boolean scrolled(float amountX, float amountY) {
         return false;
     }
 }
